@@ -10,20 +10,42 @@ import java.util.List;
  * @author Sean Kleinjung
  */
 public class ModuleServiceDefaultImpl implements ModuleService {
+
+    private static final String[] MODULE_NAMES = new String[] {
+            "Wires",
+            "The Button",
+            "Keypads",
+            "Simon Says",
+            "Who's on First",
+            "Memory",
+            "Morse Code",
+            "Complicated Wires",
+            "Wire Sequences",
+            "Mazes",
+            "Passwords"
+    };
+
+    private static final String[] NEEDY_MODULE_NAMES = new String[] {
+            "Venting Gas",
+            "Capacitor Discharge",
+            "Knobs",
+    };
+
     @Override
     public List<Module> getAllModules() {
-        List<Module> result = new ArrayList<>(3);
-        Module module = new Module();
-        module.setName("Wires");
-        result.add(module);
+        List<Module> result = new ArrayList<>(MODULE_NAMES.length + NEEDY_MODULE_NAMES.length);
 
-        module = new Module();
-        module.setName("Morse Code");
-        result.add(module);
+        for (String name : MODULE_NAMES) {
+            Module module = new Module();
+            module.setName(name);
+            result.add(module);
+        }
 
-        module = new Module();
-        module.setName("Complicated Wires");
-        result.add(module);
+        for (String name : NEEDY_MODULE_NAMES) {
+            Module module = new Module();
+            module.setName(name);
+            result.add(module);
+        }
 
         return result;
     }
