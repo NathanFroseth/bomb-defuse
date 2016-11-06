@@ -1,12 +1,144 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:id="@+id/wire_inputs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <RelativeLayout
+            android:id="@+id/wire1_row"
+            style="@style/Wires_Row"
+            >
+            <TextView
+                android:id="@+id/wire1_label"
+                android:text="Wire 1:"
+                style="@style/Wires_Label"
+                />
+            <FrameLayout
+                android:layout_toEndOf="@id/wire1_label"
+                style="@style/Wires_Border"
+                >
+                <Spinner
+                    android:id="@+id/wire1"
+                    style="@style/Wires_Spinner"
+                    />
+            </FrameLayout>
+        </RelativeLayout>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Wires Placeholder"
-        />
+        <RelativeLayout
+            android:id="@+id/wire2_row"
+            android:layout_below="@id/wire1_row"
+            style="@style/Wires_Row"
+            >
+            <TextView
+                android:id="@+id/wire2_label"
+                android:text="Wire 2:"
+                style="@style/Wires_Label"
+                />
+            <FrameLayout
+                android:layout_toEndOf="@id/wire2_label"
+                style="@style/Wires_Border"
+                >
+                <Spinner
+                    android:id="@+id/wire2"
+                    style="@style/Wires_Spinner"
+                    />
+            </FrameLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/wire3_row"
+            android:layout_below="@id/wire2_row"
+            style="@style/Wires_Row"
+            >
+            <TextView
+                android:id="@+id/wire3_label"
+                android:text="Wire 3:"
+                style="@style/Wires_Label"
+                />
+            <FrameLayout
+                android:layout_toEndOf="@id/wire3_label"
+                style="@style/Wires_Border"
+                >
+                <Spinner
+                    android:id="@+id/wire3"
+                    style="@style/Wires_Spinner"
+                    />
+            </FrameLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/wire4_row"
+            android:layout_below="@id/wire3_row"
+            style="@style/Wires_Row"
+            >
+            <TextView
+                android:id="@+id/wire4_label"
+                android:text="Wire 4:"
+                style="@style/Wires_Label"
+                />
+            <FrameLayout
+                android:layout_toEndOf="@id/wire4_label"
+                style="@style/Wires_Border"
+                >
+                <Spinner
+                    android:id="@+id/wire4"
+                    style="@style/Wires_Spinner"
+                    />
+            </FrameLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/wire5_row"
+            android:layout_below="@id/wire4_row"
+            style="@style/Wires_Row"
+            >
+            <TextView
+                android:id="@+id/wire5_label"
+                android:text="Wire 5:"
+                style="@style/Wires_Label"
+                />
+            <FrameLayout
+                android:layout_toEndOf="@id/wire5_label"
+                style="@style/Wires_Border"
+                >
+                <Spinner
+                    android:id="@+id/wire5"
+                    style="@style/Wires_Spinner"
+                    />
+            </FrameLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/wire6_row"
+            android:layout_below="@id/wire5_row"
+            style="@style/Wires_Row"
+            >
+            <TextView
+                android:id="@+id/wire6_label"
+                android:text="Wire 6:"
+                style="@style/Wires_Label"
+                />
+            <FrameLayout
+                android:layout_toEndOf="@id/wire6_label"
+                style="@style/Wires_Border"
+                >
+                <Spinner
+                    android:id="@+id/wire6"
+                    style="@style/Wires_Spinner"
+                    />
+            </FrameLayout>
+        </RelativeLayout>
+    </RelativeLayout>
 
 </LinearLayout>

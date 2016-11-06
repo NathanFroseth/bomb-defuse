@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Defuse</string>
+
+    <string-array name="wire_colors">
+        <item>None</item>
+        <item>Black</item>
+        <item>Blue</item>
+        <item>Red</item>
+        <item>White</item>
+        <item>Yellow</item>
+    </string-array>
 </resources>
